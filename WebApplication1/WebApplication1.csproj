@@ -187,6 +187,7 @@
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Productos.aspx" />
+    <Content Include="provedor.aspx" />
     <Content Include="puesto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -365,6 +366,13 @@
       <DependentUpon>Productos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provedor.aspx.cs">
+      <DependentUpon>provedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="provedor.aspx.designer.cs">
+      <DependentUpon>provedor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="puesto.aspx.cs">
       <DependentUpon>puesto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
