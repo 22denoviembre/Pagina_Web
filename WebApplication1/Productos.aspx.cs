@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 namespace WebApplication1
 {
@@ -11,7 +12,46 @@ namespace WebApplication1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string Myconnectionstring = "Database=Academica9; Data Source=localhost; User id= ;password ;";
+
+                SqlConnection Myconnection = new SqlConnection(Myconnectionstring);
+                String myselectQuerty = "Select* from producto_ where id_producto" + txtbuscar.Text + "";
+                SqlCommand mycommand = new SqlCommand(myselectQuerty, Myconnection);
+
+                Myconnection.Open();
+
+                SqlDataReader myreader;
+                myreader = mycommand.ExecuteReader();
+
+                if(myreader.Read())
+                {
+                    txtproducto.Text = (myreader.GetString(1));
+                    txtcaracteristicas.Text = (myreader.GetString(2));
+                    txtprecio.Text = (myreader.GetString(3));
+                }
+               
+                else
+                {
+                    Label1.Visible = true;
+                    Label1.Text = "Producto Ingresado no esta disponible";
+                    Label1.Visible = false;
+                }
+                myreader.Close();
+                Myconnection.Close();
+            }
+            catch(System.Exception)
+            {
+                Label1.Visible = true;
+                Label1.Text = "Escribe el id del producto";
+                Label1.Visible = false;
+            }
         }
     }
 }
