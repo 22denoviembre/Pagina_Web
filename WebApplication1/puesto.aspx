@@ -1,12 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="puesto.aspx.cs" Inherits="WebApplication1.puesto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p>
-        <br />
-    </p>
-    <p>
-    </p>
+   <center> <div> <h1>Empleados </h1>   </div> </center>
 <p>
-    </p>
+    Puestos</p>
 <p>
     <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="prueba" DataTextField="puestos" DataValueField="puestos" AutoPostBack="True">
     </asp:DropDownList>
