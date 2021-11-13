@@ -7,7 +7,14 @@
         
     <p> 
 
-        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Width="519px">
+        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Width="519px" AutoGenerateColumns="False" DataKeyNames="id_producto" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="id_producto" HeaderText="id_producto" ReadOnly="True" SortExpression="id_producto" />
+                <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
+                <asp:BoundField DataField="caractetisticas" HeaderText="caractetisticas" SortExpression="caractetisticas" />
+                <asp:BoundField DataField="precios" HeaderText="precios" SortExpression="precios" />
+                <asp:BoundField DataField="proveedor_id" HeaderText="proveedor_id" SortExpression="proveedor_id" />
+            </Columns>
             <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
             <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
@@ -17,6 +24,8 @@
             <SortedDescendingCellStyle BackColor="#E5E5E5" />
             <SortedDescendingHeaderStyle BackColor="#242121" />
         </asp:GridView>
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString7 %>" SelectCommand="SELECT * FROM [producto]"></asp:SqlDataSource>
 
     </p>
     <p>

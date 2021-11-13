@@ -19,10 +19,10 @@ namespace WebApplication1
         {
             try
             {
-                string Myconnectionstring = "Database=Academica9; Data Source=localhost; User id= ;password ;";
+                string Myconnectionstring = "Data Source=DESKTOP-KIJ0JR6; Initial Cdatalog=academica; Integrated Security=True";
 
                 SqlConnection Myconnection = new SqlConnection(Myconnectionstring);
-                String myselectQuerty = "Select* from producto_ where id_producto" + txtbuscar.Text + "";
+                String myselectQuerty = "Select* from producto where id_producto" + txtbuscar.Text + "";
                 SqlCommand mycommand = new SqlCommand(myselectQuerty, Myconnection);
 
                 Myconnection.Open();
