@@ -4,7 +4,14 @@
         <h2>PRODUCTOS</h2> 
     </Center>
     <br>
-        
+        <p> 
+            <asp:Table ID="Table1" runat="server">
+                <asp:TableRow ID="Producto" runat="server">
+                </asp:TableRow>
+                <asp:TableRow ID="Caracteristicas" runat="server">
+                </asp:TableRow>
+            </asp:Table>
+    </p>
     <p> 
 
         <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Width="519px" AutoGenerateColumns="False" DataKeyNames="id_producto" DataSourceID="SqlDataSource1">

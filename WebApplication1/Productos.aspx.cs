@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.Sql;
 using System.Data.SqlClient;
 
 namespace WebApplication1
@@ -19,7 +21,7 @@ namespace WebApplication1
         {
             try
             {
-                string Myconnectionstring = "Data Source=DESKTOP-KIJ0JR6; Initial Cdatalog=academica; Integrated Security=True";
+                string Myconnectionstring = "Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True";
 
                 SqlConnection Myconnection = new SqlConnection(Myconnectionstring);
                 String myselectQuerty = "Select* from producto where id_producto" + txtbuscar.Text + "";
