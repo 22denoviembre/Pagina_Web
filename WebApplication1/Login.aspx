@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server" style="background-color: #C0C0C0; background-repeat: no-repeat; background-position: center">
+    <form id="form1" runat="server" style="background-color: #CCCCFF; background-repeat: no-repeat; background-position: center">
         <div>
             <center>
                 <h2>Inicio de sesion</h2>
