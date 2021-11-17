@@ -186,6 +186,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="ingreso.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="provedor.aspx" />
@@ -359,6 +360,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ingreso.aspx.cs">
+      <DependentUpon>ingreso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ingreso.aspx.designer.cs">
+      <DependentUpon>ingreso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
