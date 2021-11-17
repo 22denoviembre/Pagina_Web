@@ -187,9 +187,11 @@
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Productos.aspx" />
+    <Content Include="Producto.aspx" />
     <Content Include="provedor.aspx" />
-    <Content Include="puesto.aspx" />
+    <Content Include="puestos.aspx">
+      <BrowseToURL>~/puestos.aspx</BrowseToURL>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -366,12 +368,12 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Productos.aspx.cs">
-      <DependentUpon>Productos.aspx</DependentUpon>
+    <Compile Include="Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Productos.aspx.designer.cs">
-      <DependentUpon>Productos.aspx</DependentUpon>
+    <Compile Include="Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="provedor.aspx.cs">
@@ -381,12 +383,12 @@
     <Compile Include="provedor.aspx.designer.cs">
       <DependentUpon>provedor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="puesto.aspx.cs">
-      <DependentUpon>puesto.aspx</DependentUpon>
+    <Compile Include="puestos.aspx.cs">
+      <DependentUpon>puestos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="puesto.aspx.designer.cs">
-      <DependentUpon>puesto.aspx</DependentUpon>
+    <Compile Include="puestos.aspx.designer.cs">
+      <DependentUpon>puestos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
