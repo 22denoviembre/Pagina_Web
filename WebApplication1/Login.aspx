@@ -8,7 +8,7 @@
     <title>Iniciar Sesion</title>
     <style type="text/css">
         #form1 {
-            height: 302px;
+            height: 767px;
         }
     </style>
 </head>
@@ -27,10 +27,26 @@
                     <asp:TextBox ID="txtclave" runat="server" TextMode="Password" Width="158px"></asp:TextBox>
                 </p>
                 <p> 
-                    <asp:Label ID="lblmensaje" runat="server" Text="lblMensaje"></asp:Label>
+                    <asp:Label ID="lblmensaje" runat="server" Text="lblMensaje" Visible="False" ></asp:Label>
                 </p>
                 <p> 
                     <asp:Button ID="btbuton" runat="server" Text="Ingresar" OnClick="btbuton_Click" />
+                </p>
+                <p> 
+                    <asp:DetailsView ID="DetailsView1" runat="server" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" Height="50px" OnPageIndexChanging="DetailsView1_PageIndexChanging" Width="125px">
+                        <EditRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                        <FooterStyle BackColor="#CCCCCC" />
+                        <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                        <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                        <RowStyle BackColor="White" />
+                    </asp:DetailsView>
+                </p>
+                <p> 
+                    <asp:Table ID="Table1" runat="server" Height="169px" Width="211px">
+                        <asp:TableRow ID="Ingreas" runat="server">
+                            <asp:TableCell runat="server"></asp:TableCell>
+                        </asp:TableRow>
+                    </asp:Table>
                 </p>
             </center>
         </div>

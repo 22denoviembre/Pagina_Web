@@ -12,7 +12,8 @@ namespace WebApplication1
 {
 	public partial class Login : System.Web.UI.Page
 	{
-		
+		SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+
 		protected void Page_Load(object sender, EventArgs e)
 	    {
 
@@ -22,37 +23,24 @@ namespace WebApplication1
 
         protected void btbuton_Click(object sender, EventArgs e)
         {
-			
-			string usuario = this.txtusuario.Text;
-			string clave = this.txtclave.Text;
-			SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
-
-			if (txtusuario.Text != "" & txtclave.Text != "")
-            {
-
-            }
-
-			string cadena = "SELECT usuario, password FROM usuario WHERE @usuario ='" + txtusuario + "' AND @password ='" + txtclave + "'";
-			SqlCommand consulta = new SqlCommand(cadena, conexion);
-
 			conexion.Open();
-			consulta.Parameters.AddWithValue(@usuario, usuario);
-			consulta.Parameters.AddWithValue(@clave, clave);
-
-			int i;
-
-			i = consulta.ExecuteNonQuery();
-
-			if(i>0)
+			SqlCommand comando = new SqlCommand("Select * from usuario where usuario = '" + txtusuario.Text.Trim() + "' and password= '" + txtclave.Text.Trim() + "'", conexion);
+			SqlDataReader dr = comando.ExecuteReader();
+			
+			if(dr.HasRows)
             {
-				
-				lblmensaje.Text = "Bienvenido al Sistema";
-				Response.Redirect(default);
+				Response.Redirect("default.aspx");
             }
-			else
+            else
             {
-				lblmensaje.Text = "Usuario y Contreseña Incorrectos";
-            }
+				Response.Write("<scrip>alert('Datos Erroneros');</script>");
+
+			}
 		}
-	}
+
+        protected void DetailsView1_PageIndexChanging(object sender, DetailsViewPageEventArgs e)
+        {
+
+        }
+    }
 }
