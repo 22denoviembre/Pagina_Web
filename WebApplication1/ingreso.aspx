@@ -23,7 +23,15 @@
         <asp:Button id="btbconsulta" runat="server" Text="Consultar Tabla" OnClick="btbconsulta_Click"/>
         <br />
        <br />
-        <asp:GridView ID="consultaview" runat="server">
+        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" DataKeyNames="id_empleado" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="id_usuario" HeaderText="id_usuario" SortExpression="id_usuario" />
+                <asp:BoundField DataField="id_empleado" HeaderText="id_empleado" ReadOnly="True" SortExpression="id_empleado" />
+                <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
+                <asp:BoundField DataField="usuario" HeaderText="usuario" SortExpression="usuario" />
+                <asp:BoundField DataField="password" HeaderText="password" SortExpression="password" />
+            </Columns>
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString8 %>" SelectCommand="SELECT * FROM [usuario]"></asp:SqlDataSource>
     </div>
      </asp:Content>
