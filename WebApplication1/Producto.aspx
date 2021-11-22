@@ -37,27 +37,16 @@
     </p>
     <p>
 
-        <asp:TextBox ID="txtbuscar" runat="server" Width="151px"></asp:TextBox>
-        <asp:Button ID="Button3" runat="server" Text="Buscar" OnClick="Button3_Click" />
-
-        <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
-
-    </p>
+        &nbsp;</p>
     <p>
 
-        <asp:TextBox ID="txtproducto" runat="server" Width="150px"></asp:TextBox>
-
-    &nbsp;Producto Selecionado</p>
+        &nbsp;</p>
     <p>
 
-        <asp:TextBox ID="txtcaracteristicas" runat="server" Height="88px" Width="151px"></asp:TextBox> 
-
-    &nbsp;Caracteristicas</p>
+        &nbsp;</p>
     <p>
 
-        <asp:TextBox ID="txtprecio" runat="server" Width="150px"></asp:TextBox>
-
-    &nbsp;Precio</p>
+        &nbsp;</p>
     <br />
 
 </asp:Content>
