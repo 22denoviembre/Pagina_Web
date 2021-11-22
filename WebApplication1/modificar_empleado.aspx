@@ -2,12 +2,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="codigo" DataSourceID="SqlDataSourceEmpleados" style="font-size: small" Width="373px">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" DataKeyNames="id_empleado" DataSourceID="SqlDataSource1" style="font-size: small" Width="373px">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
-                <asp:BoundField DataField="codigo" HeaderText="codigo" ReadOnly="True" SortExpression="codigo" />
+                <asp:BoundField DataField="id_empleado" HeaderText="id_empleado" ReadOnly="True" SortExpression="id_empleado" />
                 <asp:BoundField DataField="nombre" HeaderText="nombre" SortExpression="nombre" />
-                <asp:BoundField DataField="apellido" HeaderText="apellido" SortExpression="apellido" />
+                <asp:BoundField DataField="diu" HeaderText="diu" SortExpression="diu" />
+                <asp:BoundField DataField="nit" HeaderText="nit" SortExpression="nit" />
+                <asp:BoundField DataField="correo" HeaderText="correo" SortExpression="correo" />
+                <asp:BoundField DataField="puesto" HeaderText="puesto" SortExpression="puesto" />
+                <asp:BoundField DataField="salario" HeaderText="salario" SortExpression="salario" />
             </Columns>
             <FooterStyle BackColor="#99CCCC" ForeColor="#003399" />
             <HeaderStyle BackColor="#003399" Font-Bold="True" ForeColor="#CCCCFF" />
@@ -19,6 +23,7 @@
             <SortedDescendingCellStyle BackColor="#D6DFDF" />
             <SortedDescendingHeaderStyle BackColor="#002876" />
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString10 %>" SelectCommand="SELECT * FROM [empleados]"></asp:SqlDataSource>
     </p>
     <p>
         &nbsp;</p>
@@ -73,28 +78,6 @@
                 </td>
             </tr>
             <tr>
-                <td class="style52" style="text-align: left">N° afp<br />
-                    <asp:TextBox ID="txtafp" runat="server" BorderColor="#999999" BorderStyle="Solid" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" MaxLength="12" style="text-align: left" Width="130px"></asp:TextBox>
-                </td>
-                <td class="style54" style="text-align: left">
-                    <asp:RequiredFieldValidator ID="validaafp" runat="server" ControlToValidate="txtafp" CssClass="style44" ErrorMessage="Escriba numero de afp" style="text-align: left"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="style52" style="text-align: left">N° ISSS<br />
-                    <asp:TextBox ID="txtisss" runat="server" BorderColor="#999999" BorderStyle="Solid" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" MaxLength="9" style="text-align: left" Width="130px"></asp:TextBox>
-                </td>
-                <td class="style54" style="text-align: left">
-                    <asp:RequiredFieldValidator ID="validaisss" runat="server" ControlToValidate="txtisss" CssClass="style44" ErrorMessage="Escriba numero de seguro social" style="text-align: left"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
-            <tr>
-                <td class="style52" style="text-align: left">N° Telefono<br />
-                    <asp:TextBox ID="txttelefono" runat="server" BorderColor="#999999" BorderStyle="Solid" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" MaxLength="8" style="text-align: left" Width="130px"></asp:TextBox>
-                </td>
-                <td class="style54" style="text-align: left">&nbsp;</td>
-            </tr>
-            <tr>
                 <td class="style55" style="text-align: left">Correo Electronico<br />
                     <asp:TextBox ID="txtcorreo" runat="server" BorderColor="#999999" BorderStyle="Solid" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" MaxLength="30" style="text-align: left" Width="247px"></asp:TextBox>
                 </td>
@@ -113,25 +96,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="style52" style="text-align: left">Fecha de Contrato (Año-Dia-Mes)<br />
-                    <asp:TextBox ID="txtfechacontrato" runat="server" BorderColor="#999999" BorderStyle="Solid" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" style="text-align: left" Width="130px"></asp:TextBox>
-                </td>
-                <td class="style54" style="text-align: left">&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="style52" style="text-align: left">Cargo Asignado<br />
-                    <asp:DropDownList ID="lstpuesto0" runat="server" DataSourceID="SqlDataSourcePuestos" DataTextField="puesto" DataValueField="codigopuesto" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" Height="30px" Width="246px">
+                <td class="style52" style="text-align: left">Puesto de Trabajo<br />
+                    <asp:DropDownList ID="lstpuesto0" runat="server" DataSourceID="SqlDataSource3" DataTextField="puestos" DataValueField="puestos" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" Height="30px" Width="246px">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:Puestok %>" SelectCommand="SELECT [puestos] FROM [puestos]"></asp:SqlDataSource>
                 </td>
                 <td class="style54" style="text-align: left">
-                    <asp:RequiredFieldValidator ID="validapuesto" runat="server" ControlToValidate="lstpuesto" CssClass="style44" ErrorMessage="Asigne un cargo" style="text-align: left"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="validapuesto" runat="server" ControlToValidate="lstpuesto" CssClass="style44" ErrorMessage="Asigne un puesto de trabajo" style="text-align: left"></asp:RequiredFieldValidator>
                 </td>
-            </tr>
-            <tr>
-                <td class="style52" style="text-align: left">Direccion de Domicilio<br />
-                    <asp:TextBox ID="txtdireccion" runat="server" BorderColor="#999999" BorderStyle="Solid" Font-Names="Arial" Font-Size="12pt" ForeColor="#660033" Height="73px" MaxLength="100" style="text-align: left" TextMode="MultiLine" Width="245px"></asp:TextBox>
-                </td>
-                <td class="style54" style="text-align: left">&nbsp;</td>
             </tr>
             <tr>
                 <td class="style52" style="text-align: left">&nbsp;</td>
@@ -144,9 +116,9 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <asp:SqlDataSource ID="SqlDataSource_empleado" runat="server" ConnectionString="<%$ ConnectionStrings:BASEALMACENConnectionString %>" SelectCommand="SELECT * FROM [empleado] WHERE ([codigo] = @codigo)">
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString12 %>" SelectCommand="SELECT * FROM [empleados] WHERE ([id_empleado] = @id_empleado)" OnSelecting="SqlDataSource_empleado_Selecting1">
                         <SelectParameters>
-                            <asp:ControlParameter ControlID="GridView1" Name="codigo" PropertyName="SelectedValue" Type="String" />
+                            <asp:ControlParameter ControlID="GridView1" Name="id_empleado" PropertyName="SelectedValue" Type="Int32" />
                         </SelectParameters>
                     </asp:SqlDataSource>
                     <br />

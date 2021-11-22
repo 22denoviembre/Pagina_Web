@@ -13,5 +13,15 @@ namespace WebApplication1
         {
 
         }
+
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
+
+        protected void SqlDataSource2_Selecting1(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }

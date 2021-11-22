@@ -24,6 +24,15 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
+        /// Control SqlDataSource1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+
+        /// <summary>
         /// Control txtcodigo.
         /// </summary>
         /// <remarks>
@@ -114,51 +123,6 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validanit;
 
         /// <summary>
-        /// Control txtafp.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtafp;
-
-        /// <summary>
-        /// Control validaafp.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator validaafp;
-
-        /// <summary>
-        /// Control txtisss.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtisss;
-
-        /// <summary>
-        /// Control validaisss.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator validaisss;
-
-        /// <summary>
-        /// Control txttelefono.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttelefono;
-
-        /// <summary>
         /// Control txtcorreo.
         /// </summary>
         /// <remarks>
@@ -204,15 +168,6 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.RangeValidator validasalario2;
 
         /// <summary>
-        /// Control txtfechacontrato.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtfechacontrato;
-
-        /// <summary>
         /// Control lstpuesto0.
         /// </summary>
         /// <remarks>
@@ -220,6 +175,15 @@ namespace WebApplication1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList lstpuesto0;
+
+        /// <summary>
+        /// Control SqlDataSource3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
 
         /// <summary>
         /// Control validapuesto.
@@ -231,15 +195,6 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.RequiredFieldValidator validapuesto;
 
         /// <summary>
-        /// Control txtdireccion.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtdireccion;
-
-        /// <summary>
         /// Control btnguardar.
         /// </summary>
         /// <remarks>
@@ -249,13 +204,13 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.Button btnguardar;
 
         /// <summary>
-        /// Control SqlDataSource_empleado.
+        /// Control SqlDataSource2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource_empleado;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
         /// Control lblmensaje.
