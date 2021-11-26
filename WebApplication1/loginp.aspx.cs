@@ -21,7 +21,7 @@ namespace WebApplication1
         protected void loginbtn_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            SqlCommand comando = new SqlCommand("Select * from usuario where usuario = '" + i.text + "' and password= '" + txtClave.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("Select * from usuario where usuario = '" + txtusuario.Text + "' and password= '" + txtclave.Text + "'", conexion);
             SqlDataReader dr = comando.ExecuteReader();
 
             if (dr.HasRows)

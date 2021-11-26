@@ -116,14 +116,15 @@
             <div class="box">
                 <p>Usuario</p>
                 <div>
-                    <input type="text" name="" id="txtusuario" placeholder="Ingresa tu usuario"  />
+                    
+                    <asp:TextBox runat="server" ID="txtusuario" placeholder="Ingresa tu Usuario" CssClass="auto-style1" />
                 </div>
             </div>
             <div class="box">
                 <p>Contraseña</p>
                 <div>
-                    text
-                    <input type="password" name=" " id="txtClave" placeholder="Ingresa tu Contraseña" class="auto-style1" />
+                    <asp:TextBox runat="server" ID="txtclave" placeholder="Ingresa tu Contraseña" CssClass="auto-style1" TextMode="Password" />
+                   
                 </div>
             </div>
             <button class="loginbtn" id="loginbtn" style="color: #FF0000">Ingresar</button>
