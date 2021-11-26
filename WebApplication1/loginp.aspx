@@ -116,13 +116,13 @@
             <div class="box">
                 <p>Usuario</p>
                 <div>
-                    <input type="email" name="" id="txtusuario" placeholder="Ingresa tu usuario"  />
+                    <input type="text" name="" id="txtusuario" placeholder="Ingresa tu usuario"  />
                 </div>
             </div>
             <div class="box">
                 <p>Contraseña</p>
                 <div>
-                    
+                    text
                     <input type="password" name=" " id="txtClave" placeholder="Ingresa tu Contraseña" class="auto-style1" />
                 </div>
             </div>
