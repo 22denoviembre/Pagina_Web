@@ -80,7 +80,7 @@
             color:white;
         }
         .container .box div::before{
-           content: ' ' ;
+           content: '' ;
            position: absolute;
            top: 50%;
            left: 50%;
@@ -102,6 +102,10 @@
            background: linear-gradient(to ringt, #ff416c, #ff4b2b);
            transition: all .4s;
         }
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
     </style>
        
 </head>
@@ -112,16 +116,17 @@
             <div class="box">
                 <p>Usuario</p>
                 <div>
-                    <input type="usuario" name=" " id="" placeholder="Ingresa tu usuario" />
+                    <input type="email" name="" id="txtusuario" placeholder="Ingresa tu usuario"  />
                 </div>
             </div>
             <div class="box">
                 <p>Contraseña</p>
                 <div>
-                    <input type="contrasena" name=" " id="" placeholder="Ingresa tu Contraseña" />
+                    
+                    <input type="password" name=" " id="txtClave" placeholder="Ingresa tu Contraseña" class="auto-style1" />
                 </div>
             </div>
-            <button class="loginbtn">Ingresar</button>
+            <button class="loginbtn" id="loginbtn" style="color: #FF0000">Ingresar</button>
             <p class="text">¿No Tienes una Cuenta? <a href="ingreso.aspx">Registrarse</a></p>
         </div>
     </form>
