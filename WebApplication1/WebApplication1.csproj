@@ -185,9 +185,14 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Account\Web.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="ingreso.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="loginp.aspx" />
     <Content Include="modificar_empleado.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="provedor.aspx" />
@@ -376,6 +381,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loginp.aspx.cs">
+      <DependentUpon>loginp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginp.aspx.designer.cs">
+      <DependentUpon>loginp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="modificar_empleado.aspx.cs">
       <DependentUpon>modificar_empleado.aspx</DependentUpon>
@@ -392,6 +404,11 @@
       <DependentUpon>Producto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="provedor.aspx.cs">
       <DependentUpon>provedor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -406,6 +423,7 @@
     <Compile Include="puestos.aspx.designer.cs">
       <DependentUpon>puestos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Settings.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
