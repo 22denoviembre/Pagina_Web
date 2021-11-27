@@ -128,7 +128,7 @@
                 </div>
             </div>
             <button class="loginbtn" id="loginbtn" style="color: #FF0000">Ingresar</button>
-            <p class="text">¿No Tienes una Cuenta? <a href="ingreso.aspx">Registrarse</a></p>
+            <p class="text">¿No Tienes una Cuenta? <a href="ingresop.aspx">Registrarse</a></p>
         </div>
     </form>
 </body>
