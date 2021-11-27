@@ -2,16 +2,35 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+    <details>
+        <sumary> ~¿Que es Menu?</sumary>
+        <p>
+          MENU Es en el cual se pueden seleccionar diferentes contenidos <br />
+        </p>
+        </details>
+     <details>
+        <sumary> ~Opcion Puestos </sumary>
+        <p>
+          Permite consultar los puestos de los empleados  <br />
+        </p>
+        </details>
+     
+     <details>
+        <sumary> ~Opcion Producto </sumary>
+        <p>
+          Permite visualizar los produstos en stock  <br />
+        </p>
+        </details>
+
+    <details>
+        <sumary> ~Acerca de  </sumary>
+        <p>
+          Muestra la opccion de ensamblado   <br />
+        </p>
+        </details>
+
+
+
+
 </asp:Content>
