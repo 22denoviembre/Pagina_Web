@@ -5,8 +5,8 @@
 
     <details>
         <sumary> ~¿Que es Menu?</sumary>
-        <p>
-          MENU Es en el cual se pueden seleccionar diferentes contenidos <br />
+        <p> 
+            MENU Es en el cual se pueden seleccionar diferentes contenidos <br />
         </p>
         </details>
      <details>
@@ -19,7 +19,7 @@
      <details>
         <sumary> ~Opcion Producto </sumary>
         <p>
-          Permite visualizar los produstos en stock  <br />
+          Permite visualizar los productos en stock  <br />
         </p>
         </details>
 
