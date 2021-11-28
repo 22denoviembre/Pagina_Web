@@ -2,37 +2,35 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
-    <h2><%: Title %>AYUDA</h2>
-    
+    <h2>AYUDA</h2>
+    <h6>Opciones Desplegables</h6>
 
-    <details >
-        <sumary> ~¿Que es Menu?</sumary>
+    <details>
+        <summary> ¿Que es Menu?</summary>
         <p> 
             MENU Es en el cual se pueden seleccionar diferentes contenidos <br />
         </p>
         </details>
-     <details >
-        <sumary> ~Opcion Puestos </sumary>
+
+     <details>
+        <summary> ~Opcion Puestos </summary>
         <p>
           Permite consultar los puestos de los empleados  <br />
         </p>
         </details>
      
      <details >
-        <sumary> ~Opcion Producto </sumary>
+        <summary> ~Opcion Producto </summary>
         <p>
           Permite visualizar los productos en stock  <br />
         </p>
         </details>
 
-    <details>
-        <sumary> ~Acerca de  </sumary>
+    <details><summary> ~Acerca de</summary>
         <p >
           Muestra la opccion de ensamblado   <br />
         </p>
         </details>
 
-
-
-
+   
 </asp:Content>

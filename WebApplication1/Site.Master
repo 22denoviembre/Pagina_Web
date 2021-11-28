@@ -1,7 +1,11 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
 
 <!DOCTYPE html>
-
+<style>
+       .header{
+           background-color:aqua;
+       }
+    </style>
 <html lang="es">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -16,6 +20,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
+    
 <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
