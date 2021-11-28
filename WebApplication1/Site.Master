@@ -2,8 +2,82 @@
 
 <!DOCTYPE html>
 <style>
-       .header{
-           background-color:aqua;
+       body{
+           margin:0;
+           padding:0;
+           font-family:sans-serif;
+           background:#153467;
+       }
+       ul{
+           position:absolute;
+           top:10%;
+           left:50%;
+           transform: translate(-50%,-50%);
+           display:flex;
+           background:#fff;
+           padding:20px 0;
+           border-radius:10px;
+           box-shadow:0 10px 30px rgba(0,0,0,0.3)
+       }
+       ul li{
+           list-style:none;
+           text-align:center;
+           display:block;
+           border-right:1px solid rgba(0,0,0,0.2)
+       }
+       ul li a .nome{
+           position:relative;
+           height:20px;
+           width:100%;
+           display:block;
+       }
+       ul li a .nome span{
+           display:block;
+           position:relative;
+           color:#000;
+           font-size:18px;
+           line-height:20px;
+           transition: .5s;
+           overflow: hidden;
+       }
+       ul li a .nome span::before{
+           content:attr(data-text);
+           position:absolute;
+           top:-100%;
+           left:0;
+           width:100%;
+           height:100%;
+           color:#153467;
+       }
+       ul li a:hover .nome span::before{
+           transform: translateY(20px)
+       }
+       ul li a{
+           text-decoration: none;
+           padding: 0 50px;
+           display:block;
+       }
+       ul li a .icon{
+           width:40px;
+           height:40px;
+           text-align:center;
+           background:transparent;
+           overflow:hidden;
+           margin:0 auto 10px;
+       }
+       ul li a .icon .fa{
+           width:100%;
+           height:100%;
+           line-height:40px;
+           font-size:34px;
+           transition: .5s;
+           color:#000;
+       }
+       ul li a .icon .fa:last-child{
+           color:#153467;
+       }
+       ul li a:hover .icon .fa{
+           transform: translateY(-100%)
        }
     </style>
 <html lang="es">
@@ -42,39 +116,45 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" runat="server" href="~/">Grupo4</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Inicio</a></li>
-                        <li><a runat="server" href="~/About">Acerca de</a></li>
-                        <li><a runat="server" href="~/Contact">Contacto</a></li>
-                         <li><a runat="server" href="~/puestos">Empleados</a></li>
-                        <li><a runat="server" href="~/Producto">Producto</a></li>
-                        
-                    </ul>
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                             <li><a runat="server" href="~/ingreso">Registrarse</a></li>
-                            </ul>
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hola. <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
-        </div>
+       <ul>
+           <li>
+               <a href="#">
+                   <div class="icon"><i class="fa fa-home"></i><i class="fa fa-home"></i></div>
+                   <div class="nome"><span data-text="Home">Home</span></div>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <div class="icon"><i class="fa fa-file"></i><i class="fa fa-file"></i></div>
+                   <div class="nome"><span data-text="About">About</span></div>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <div class="icon"><i class="fa fa-cogs"></i><i class="fa fa-cogs"></i></div>
+                   <div class="nome"><span data-text="Services">Services</span></div>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <div class="icon"><i class="fa fa-users"></i><i class="fa fa-users"></i></div>
+                   <div class="nome"><span data-text="Team">Team</span></div>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <div class="icon"><i class="fa fa-picture-a"></i><i class="fa fa-picture-a"></i></div>
+                   <div class="nome"><span data-text="Gallery">Gallery</span></div>
+               </a>
+           </li>
+           <li>
+               <a href="#">
+                   <div class="icon"><i class="fa fa-envelope"></i><i class="fa fa-envelope"></i></div>
+                   <div class="nome"><span data-text="Contact">Contact</span></div>
+               </a>
+           </li>
+       </ul>
+       
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
