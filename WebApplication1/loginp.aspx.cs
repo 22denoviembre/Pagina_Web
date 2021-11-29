@@ -18,7 +18,9 @@ namespace WebApplication1
         {
 
         }
-        protected void loginbtn_Click(object sender, EventArgs e)
+
+
+        protected void loginbtn_Click1(object sender, EventArgs e)
         {
             conexion.Open();
             SqlCommand comando = new SqlCommand("Select * from usuario where usuario = '" + txtusuario.Text + "' and password= '" + txtclave.Text + "'", conexion);

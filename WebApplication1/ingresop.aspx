@@ -92,13 +92,12 @@
         <div class="main center">
      <div class="box center">
          <h1 class="heading">Registro de Usuario</h1>
-         <input type="text" name="" id="" class="input" placeholder="Ingresa tu usuario" />
-         <div class="gender center">
-             <input type="radio" name="gender" id="" />
-             <input type="radio" name="gender" id="" />
-         </div>
-         <input type="password" name="" class="input" placeholder="Crea una contraseña"/>
-         <input type="password" name="" class="input" placeholder="Repite la contraseña"/>
+
+         <asp:TextBox runat="server" ID="txtusuario" CssClass="input" placeholder="Ingresa tu usuario"></asp:TextBox>
+         
+         <asp:TextBox runat="server" ID="txtclave" CssClass="input" placeholder="Crea una contraseña"></asp:TextBox>
+         
+          <asp:TextBox runat="server" ID="txtclave2" CssClass="input" placeholder="Repita la contraseña"></asp:TextBox>
          <button class="btn">Crear usuario</button>
      </div>
         </div>

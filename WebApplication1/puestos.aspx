@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="puestos.aspx.cs" Inherits="WebApplication1.puesto" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <br />
+    <br />
     <center> <div> <h1>Empleados </h1>   </div> </center>
 <p>
     Puestos</p>

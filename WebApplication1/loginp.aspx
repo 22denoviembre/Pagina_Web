@@ -127,7 +127,8 @@
                    
                 </div>
             </div>
-            <button class="loginbtn" id="loginbtn" style="color: #FF0000">Ingresar</button>
+            
+            <asp:button runat="server" ID="loginbtn" CssClass="loginbtn" style="color: #FF0000" Text="Ingresar" OnClick="loginbtn_Click1" />
             <p class="text">¿No Tienes una Cuenta? <a href="ingresop.aspx">Registrarse</a></p>
         </div>
     </form>
