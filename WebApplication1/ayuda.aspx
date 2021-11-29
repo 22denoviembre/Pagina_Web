@@ -1,8 +1,7 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ayuda.aspx.cs" Inherits="WebApplication1.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <br />
-    <br />
+   
     <h2>AYUDA</h2>
     <h6>Opciones Desplegables</h6>
 

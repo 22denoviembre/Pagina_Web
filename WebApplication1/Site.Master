@@ -2,85 +2,51 @@
 
 <!DOCTYPE html>
 <style>
-    
-    body{
+   *{
+       margin:0;padding:0;
+
+   }
+     body{
            margin:0;
            padding:0;
            font-family:sans-serif;
            background:#153467;
     }
-       ul{
-           position:absolute;
-           top:6%;
-           left:50%;
-           transform: translate(-50%,-50%);
-           display:flex;
-           background:#808080;
-           padding:20px 0;
-           border-radius:10px;
-           
-       }
-       ul li{
-           list-style:none;
-           text-align:center;
-           display:block;
-           border-right:1px solid rgba(0,0,0,0.2)
-       }
-       ul li a .nome{
-           position:relative;
-           height:20px;
-           width:100%;
-           display:block;
-       }
-       ul li a .nome span{
-           display:block;
-           position:relative;
-           color:#000;
-           font-size:18px;
-           line-height:20px;
-           transition: .5s;
-           overflow: hidden;
-       }
-       ul li a .nome span::before{
-           content:attr(data-text);
-           position:absolute;
-           top:-100%;
-           left:0;
-           width:100%;
-           height:100%;
-           color:#153467;
-       }
-       ul li a:hover .nome span::before{
-           transform: translateY(20px)
-       }
-       ul li a{
-           text-decoration: none;
-           padding: 0 50px;
-           display:block;
-       }
-       ul li a .icon{
-           width:40px;
-           height:40px;
-           text-align:center;
-           background:transparent;
-           overflow:hidden;
-           margin:0 auto 10px;
-       }
-       ul li a .icon .fa{
-           width:100%;
-           height:100%;
-           line-height:40px;
-           font-size:34px;
-           transition: .5s;
-           color:#000;
-       }
-       ul li a .icon .fa:last-child{
-           color:#153467;
-       }
-       ul li a:hover .icon .fa{
-           transform: translateY(-100%)
-       }
-    </style>
+nav a{
+      text-decoration:none;
+      color:inherit;
+      font-size:14px;
+      }
+            
+nav li{
+      display:inline-block;
+      width:150px;
+      height:30px;
+      padding:5px 10px;
+      background-color:#000;
+      border:1px solid #000;
+      text-align:center;
+      color:#fff;
+      position:relative;
+}
+            
+nav li:hover{
+      background-color:#fff;
+      color:#000;
+      }
+            
+nav li>ul{
+      display:none;
+      }
+
+nav li:hover>ul{
+      display:block;
+      position:absolute;
+      top:30px;
+      left:0px;
+}
+   
+ </style>
 <html lang="es">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -117,45 +83,21 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-       <ul>
-           <li>
-               <a href="Default.aspx">
-                   <div class="icon"><i class="fa fa-home"></i><i class="fa fa-home"></i></div>
-                   <div class="nome"><span data-text="Home">INICIO</span></div>
-                   
-               </a>
-           </li>
-           <li>
-               <a href="puestos.aspx">
-                   <div class="icon"><i class="fa fa-file"></i><i class="fa fa-file"></i></div>
-                   <div class="nome"><span data-text="About">PUESTOS</span></div>
-               </a>
-           </li>
-           <li>
-               <a href="Productos.aspx" >
-                   <div class="icon"><i class="fa fa-cogs"></i><i class="fa fa-cogs"></i></div>
-                   <div class="nome"  ><span data-text="Services">PRODUCTOS</span></div>
-               </a>
-           </li>
-           <li>
-               <a href="About.aspx">
-                   <div class="icon"><i class="fa fa-users"></i><i class="fa fa-users"></i></div>
-                   <div class="nome"><span data-text="Team">ACERCA DE</span></div>
-               </a>
-           </li>
-           <li>
-               <a href="ayuda.aspx">
-                   <div class="icon"><i class="fa fa-picture-a"></i><i class="fa fa-picture-a"></i></div>
-                   <div class="nome"><span data-text="Gallery">Ayuda</span></div>
-               </a>
-           </li>
-           <li>
-               <a href="modificar_empleado.aspx">
-                   <div class="icon"><i class="fa fa-envelope"></i><i class="fa fa-envelope"></i></div>
-                   <div class="nome"><span data-text="Contact">Modificar Empleados</span></div>
-               </a>
-           </li>
-       </ul>
+       
+        <nav><ul>
+        <li><a href="Default.aspx">Inicio</a></li>
+        <li><a href="puestos.aspx">Puestos</a></li>
+        <li><a href="Producto.aspx">Productos</a>
+            <ul><li><a href="#">Celulares</a></li>
+            <li><a href="#">Computadoras</a></li>
+            <li><a href="#">Laptos</a></li>
+            <li><a href="#"></a>Accesorios</li></ul>
+            </li>
+             <li><a href="modificar_empleados.aspx">Modificar empleados</a></li>
+        <li><a href="About.aspx">AcercaDe
+            </a></li>
+        <li><a href="ayuda.aspx">Ayuda</a></li>
+    </ul></nav>
        
         <div Ccsclass="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server" >
