@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // La información general sobre un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie los valores de estos atributos para modificar la información
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("WebApplication1")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Tienda de Productos Electronicos")]
+[assembly: AssemblyDescription("El proyecto consta sobre un programa de venta de dispositivos tecnológicos, en el cual los usuarios podrán escoger entre distintos aparatos según sea su conveniencia y de una manera más sencilla")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ISRI GROUP4")]
 [assembly: AssemblyProduct("WebApplication1")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright © Grupo4 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

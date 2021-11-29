@@ -4,14 +4,18 @@
 <style>
    *{
        margin:0;padding:0;
-
+       
    }
+   
      body{
            margin:0;
-           padding:0;
+           padding:50px;
            font-family:sans-serif;
            background:#153467;
-    }
+           
+     }
+     
+         
 nav a{
       text-decoration:none;
       color:inherit;
@@ -20,7 +24,7 @@ nav a{
             
 nav li{
       display:inline-block;
-      width:170px;
+      width:180px;
       height:50px;
       padding:5px 10px;
       background-color:#153467;

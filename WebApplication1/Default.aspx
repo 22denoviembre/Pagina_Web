@@ -3,10 +3,11 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
     <div class="jumbotron">
-        <h1>Grupo 4</h1>
+        <h1>Bienvenino a ISRI GROUP4</h1>
+        <h3>Tienda de Productos Electronicos</h3>
     </div>
 
     <div class="row">
-    </div>
+        </div>
 
 </asp:Content>
