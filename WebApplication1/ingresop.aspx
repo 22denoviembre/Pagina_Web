@@ -98,7 +98,8 @@
          <asp:TextBox runat="server" ID="txtclave" CssClass="input" placeholder="Crea una contraseña"></asp:TextBox>
          
           <asp:TextBox runat="server" ID="txtclave2" CssClass="input" placeholder="Repita la contraseña"></asp:TextBox>
-         <button class="btn">Crear usuario</button>
+         <asp:Button runat="server" ID="agregarusuario" CssClass="btn" Text="Crear Usuario" OnClick="agregarusuario_Click" />
+        
      </div>
         </div>
     </form>
