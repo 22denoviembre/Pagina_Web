@@ -20,11 +20,11 @@ nav a{
             
 nav li{
       display:inline-block;
-      width:150px;
-      height:30px;
+      width:170px;
+      height:50px;
       padding:5px 10px;
-      background-color:#000;
-      border:1px solid #000;
+      background-color:#153467;
+      border:5px solid #000;
       text-align:center;
       color:#fff;
       position:relative;
