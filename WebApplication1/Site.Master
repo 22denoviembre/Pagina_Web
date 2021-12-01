@@ -107,8 +107,8 @@
        
  <div class="menu">
  <ul>
- <li><a href="#">INICIO</a></li>
- <li><a href="About.aspx">PRODUCTOS</a>
+ <li><a href="Default.aspx">INICIO</a></li>
+ <li><a href="producto.aspx">PRODUCTOS</a>
      <ul>
  <li><a href="#">Computadoras</a></li>
  <li><a href="#">Laptops</a></li>
@@ -116,10 +116,10 @@
  <li><a href="#">Accesorios</a></li>
  </ul>
  </li>
- <li><a href="#">PUESTOS</a></li>
- <li><a href="#">MODIFICAR</a></li>
- <li><a href="#">ACERCADE</a></li>
-     <li><a href="#">AYUDA</a></li>
+ <li><a href="puestos.aspx">PUESTOS</a></li>
+ <li><a href="modificar_empleados.aspx">MODIFICAR</a></li>
+ <li><a href="About.aspx">ACERCADE</a></li>
+     <li><a href="ayuda.aspx">AYUDA</a></li>
  <li><a href="#">TODOS</a>
  <ul>
  <li><a href="#">HTML</a></li>
