@@ -108,9 +108,9 @@
  <div class="menu">
  <ul>
  <li><a href="Default.aspx">INICIO</a></li>
- <li><a href="producto.aspx">PRODUCTOS</a>
+ <li><a href="provedor.aspx">PRODUCTOS</a>
      <ul>
- <li><a href="#">Computadoras</a></li>
+ <li><a href="producto.aspx">Computadoras</a></li>
  <li><a href="#">Laptops</a></li>
  <li><a href="#">Celulares</a></li>
  <li><a href="#">Accesorios</a></li>
@@ -122,10 +122,10 @@
      <li><a href="ayuda.aspx">AYUDA</a></li>
  <li><a href="#">TODOS</a>
  <ul>
- <li><a href="#">HTML</a></li>
- <li><a href="#">CSS</a></li>
- <li><a href="#">JAVASCRIPT</a></li>
- <li><a href="#">PHP</a></li>
+ <li><a href="#">Productos</a></li>
+ <li><a href="#">Puestos</a></li>
+ <li><a href="#">AcercaDe</a></li>
+ <li><a href="#">Ayuda</a></li>
  <li><a href="#">MYSQL</a></li>
  </ul>
  </li>

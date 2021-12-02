@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         .nini {
+            margin: 0 auto;
             position: center;
             place-items: center;
             border: 3px double #990000;
@@ -10,16 +11,24 @@
             text-align: center;
         }
         .lili {
+             margin: 0 auto;
             position: center;
             place-items: center;
             border: 3px double #6fb219;
             width: 170px;
             text-align: center;
         }
-
+        .jiji{
+            border: 5px groove #0094ff;
+        }
 
  </style>
+   <div class="jiji">
    <h1 style="text-align: center">Productos</h1>
+    <h3 style="text-align: center">Lista de productos</h3>
+       </div>
+    <br />
+     <div class="riri">
     <div class="nini">
     <h3>Computadoras</h3>
     <asp:ImageButton runat="server" ID="computadoras" Height="90px"  ImageUrl="https://www.tecnologia-informatica.com/wp-content/uploads/2018/08/caracteristicas-de-las-computadoras-1.jpeg" />
@@ -39,4 +48,5 @@
         <h3>Accesorios</h3>
         <asp:ImageButton runat="server" ID="accesorios" Height="70px"  ImageUrl="https://cerebriti.b-cdn.net/uploads/FB_cd6b4de2764ebae08104723fdc266311.jpg" />
     </div>
+        </div>
     </asp:Content>
