@@ -117,7 +117,7 @@
  </ul>
  </li>
  <li><a href="puestos.aspx">PUESTOS</a></li>
- <li><a href="modificar_empleados.aspx">MODIFICAR</a></li>
+ <li><a href="modificar.aspx">MODIFICAR</a></li>
  <li><a href="About.aspx">ACERCADE</a></li>
      <li><a href="ayuda.aspx">AYUDA</a></li>
  <li><a href="#">TODOS</a>
