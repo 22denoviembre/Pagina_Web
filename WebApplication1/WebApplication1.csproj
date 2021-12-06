@@ -193,9 +193,9 @@
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="ingreso.aspx" />
     <Content Include="ingresop.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="loginp.aspx" />
     <Content Include="modificar_empleado.aspx" />
+    <Content Include="politicas.aspx" />
     <Content Include="Producto.aspx" />
     <Content Include="provedor.aspx" />
     <Content Include="puestos.aspx">
@@ -390,13 +390,6 @@
     <Compile Include="ingresop.aspx.designer.cs">
       <DependentUpon>ingresop.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="loginp.aspx.cs">
       <DependentUpon>loginp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -411,6 +404,13 @@
     </Compile>
     <Compile Include="modificar_empleado.aspx.designer.cs">
       <DependentUpon>modificar_empleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="politicas.aspx.cs">
+      <DependentUpon>politicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="politicas.aspx.designer.cs">
+      <DependentUpon>politicas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Producto.aspx.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
