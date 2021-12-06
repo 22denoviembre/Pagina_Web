@@ -26,6 +26,12 @@
             color:white;
 	        outline:0;
         }
+        .op{
+             border: 3px outset #1A8EC0  ;
+            background-color:#1A8EC0  ;
+            color:white;
+	        outline:0;
+        }
         .auto-style1 {
             text-align: center;
         }
@@ -52,6 +58,13 @@
      
      <details class="opci">
         <summary> ~Opcion Producto </summary>
+        <p>
+          Permite visualizar los productos en stock  <br />
+        </p>
+        </details>
+
+    <details class="op">
+        <summary> ~Opcion P </summary>
         <p>
           Permite visualizar los productos en stock  <br />
         </p>
