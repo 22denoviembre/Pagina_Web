@@ -65,8 +65,8 @@
  .container{
      position:absolute;
      top:50px;
-     right:50px;
-     left:50px;
+     right:55px;
+     left:55px;
  }
  
 </style>
@@ -124,6 +124,7 @@
  <li><a href="modificar.aspx">MODIFICAR</a></li>
  <li><a href="About.aspx">ACERCADE</a></li>
      <li><a href="ayuda.aspx">AYUDA</a></li>
+     <li><a href="politicas.aspx">POLITICAS</a></li>
  <li><a href="#">TODOS</a>
  <ul>
  <li><a href="#">Productos</a></li>
