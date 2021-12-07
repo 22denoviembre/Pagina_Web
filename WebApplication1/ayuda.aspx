@@ -64,7 +64,7 @@
         </details>
 
     <details class="op">
-        <summary> ~Opcion P </summary>
+        <summary> ~Opcion Politicas </summary>
         <p>
           Permite visualizar los productos en stock  <br />
         </p>

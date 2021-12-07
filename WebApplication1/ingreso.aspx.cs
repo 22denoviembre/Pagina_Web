@@ -23,5 +23,10 @@ namespace WebApplication1
         {
             consultaview.Visible = true;
         }
+
+        protected void btbocultar_Click(object sender, EventArgs e)
+        {
+            consultaview.Visible = false;
+        }
     }
 }
