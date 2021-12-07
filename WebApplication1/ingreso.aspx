@@ -125,7 +125,14 @@
         
         <br />
        <br />
-        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
+        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="id_producto" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:BoundField DataField="id_producto" HeaderText="id_producto" ReadOnly="True" SortExpression="id_producto" />
+                <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
+                <asp:BoundField DataField="caracteristicas" HeaderText="caracteristicas" SortExpression="caracteristicas" />
+                <asp:BoundField DataField="precios" HeaderText="precios" SortExpression="precios" />
+                <asp:BoundField DataField="provedor_id" HeaderText="provedor_id" SortExpression="provedor_id" />
+            </Columns>
             <FooterStyle BackColor="White" ForeColor="#000066" />
             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
@@ -136,6 +143,8 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
+        
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString13 %>" SelectCommand="SELECT * FROM [producto_laptop]"></asp:SqlDataSource>
         
     </div>
      </div>
