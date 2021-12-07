@@ -67,6 +67,11 @@
     padding: 10px 18px;
 }
 
+        .auto-style1 {
+            left: -33px;
+            top: 0px;
+        }
+
     </style>
     <center>
         <h1>Ingreso de Usuarios </h1> 
@@ -106,36 +111,17 @@
      <br />
     <div>
       <asp:TextBox ID="Buscar" runat="server" CssClass="ce"></asp:TextBox> 
-        <button class="Busca" onclick="btbbuscar_Click">
-            <span class="Busca-icon"><svg width="16" height="16" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.442 12.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
-            <path fill-rule="evenodd" d="M8.5 14a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM15 8.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
-            </svg></span>
-	        <span class="Busca-text">Buscar</span>
-        </button>
+         
+        <asp:Button ID="Buscarr" runat="server" Text="Buscar producto" OnClick="Buscarr_Click">
+
+        </asp:Button>
     </div>
      <br />
     <div>
-       <Button Class="consulta"  OnClick="btbconsulta_Click">
-          
-	<span class="consulta-icon"><svg width="16" height="16" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 3H4a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H4z" clip-rule="evenodd"/>
-<path fill-rule="evenodd" d="M17 6H3V5h14v1z" clip-rule="evenodd"/>
-<path fill-rule="evenodd" d="M7 17.5v-14h1v14H7zm5 0v-14h1v14h-1z" clip-rule="evenodd"/>
-<path fill-rule="evenodd" d="M17 10H3V9h14v1zm0 4H3v-1h14v1z" clip-rule="evenodd"/>
-<path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v2H2V4z"/>
-</svg></span>
-	<span class="consulta-text">Consultar tabla</span>
-        </Button>
-        <button Class="consulta" OnClick="btbocultar_Click">
-            <span class="consulta-icon"><svg width="16" height="16" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16 3H4a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM4 2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H4z" clip-rule="evenodd"/>
-              <path fill-rule="evenodd" d="M17 6H3V5h14v1z" clip-rule="evenodd"/>
-              <path fill-rule="evenodd" d="M7 17.5v-14h1v14H7zm5 0v-14h1v14h-1z" clip-rule="evenodd"/>
-              <path fill-rule="evenodd" d="M17 10H3V9h14v1zm0 4H3v-1h14v1z" clip-rule="evenodd"/>
-              <path d="M2 4a2 2 0 012-2h12a2 2 0 012 2v2H2V4z"/>
-              </svg></span>
-	          <span class="consulta-text">Ocultar tabla</span>
-        
-        </button>
-        <br />
+        <asp:Button id="consulta" runat="server" Text="Mostrar Tabla" OnClick="consulta_Click"/>
+         <asp:Button id="ocultar" runat="server" Text="Ocultar Tabla" OnClick="ocultar_Click"/>
+       
+    
         
         <br />
        <br />
@@ -152,4 +138,6 @@
         </asp:GridView>
         
     </div>
+     </div>
+     </div>
      </asp:Content>
