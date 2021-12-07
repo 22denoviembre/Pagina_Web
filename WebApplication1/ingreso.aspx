@@ -38,7 +38,34 @@
 .consulta-text {
 	padding: 8px 13px;
 }
-
+.Busca {
+    font-family: Arial;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px #039118 solid;
+    background: linear-gradient(180deg, #00b530 5%, #1564ad 81%);
+    text-shadow: 1px 1px 1px #528ecc;
+    box-shadow: inset 1px 1px 2px 0px #bbdaf7;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+.Busca:hover {
+    background: linear-gradient(180deg, #1564ad 5%, #00b530 81%);
+}
+.Busca-icon {
+    padding: 10px 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
+}
+.Busca-icon svg {
+    vertical-align: middle;
+    position: relative;
+}
+.Busca-text {
+    padding: 10px 18px;
+}
 
     </style>
     <center>
@@ -70,13 +97,22 @@
         </table>
         
     </div>
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="Adomicilio"></asp:Label>
     <br />
      <asp:RadioButtonList ID="RadioButtonList1" runat="server">
          <asp:ListItem>Si</asp:ListItem>
          <asp:ListItem>No</asp:ListItem>
     </asp:RadioButtonList>
      <br />
+    <div>
+      <asp:TextBox ID="Buscar" runat="server" CssClass="ce"></asp:TextBox> 
+        <button class="Busca" onclick="btbbuscar_Click">
+            <span class="Busca-icon"><svg width="16" height="16" viewBox="2 2 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.442 12.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"/>
+            <path fill-rule="evenodd" d="M8.5 14a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM15 8.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"/>
+            </svg></span>
+	        <span class="Busca-text">Buscar</span>
+        </button>
+    </div>
      <br />
     <div>
        <Button Class="consulta"  OnClick="btbconsulta_Click">
@@ -103,13 +139,7 @@
         
         <br />
        <br />
-        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataSourceID="computadoras">
-            <Columns>
-                <asp:BoundField DataField="producto_id" HeaderText="producto_id" SortExpression="producto_id" />
-                <asp:BoundField DataField="cantidad" HeaderText="cantidad" SortExpression="cantidad" />
-                <asp:BoundField DataField="tipos" HeaderText="tipos" SortExpression="tipos" />
-                <asp:BoundField DataField="provedor_id" HeaderText="provedor_id" SortExpression="provedor_id" />
-            </Columns>
+        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3">
             <FooterStyle BackColor="White" ForeColor="#000066" />
             <HeaderStyle BackColor="#006699" Font-Bold="True" ForeColor="White" />
             <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
@@ -120,8 +150,6 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
-        
-        <asp:SqlDataSource ID="computadoras" runat="server" ConnectionString="<%$ ConnectionStrings:proyecto_de_ventasConnectionString %>" SelectCommand="SELECT * FROM [producto]"></asp:SqlDataSource>
         
     </div>
      </asp:Content>

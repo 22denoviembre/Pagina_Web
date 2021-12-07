@@ -28,5 +28,20 @@ namespace WebApplication1
         {
             consultaview.Visible = false;
         }
+        protected void btbbuscar_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("Select * from producto where id_producto='" + Buscar.Text + "'", conexion);
+            SqlDataReader r = comm.ExecuteReader();
+            while (r.Read())
+            {
+                TextBox1.Text = r.GetValue(1).ToString();
+                TextBox2.Text = r.GetValue(2).ToString();
+                TextBox3.Text = r.GetValue(3).ToString();
+                
+
+            }
+        }
     }
 }
