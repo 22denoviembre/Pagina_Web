@@ -10,71 +10,11 @@
 	        height:25px;
 	        width: 275px;
         }
-       .consulta {
-	font-family: Arial;
-	color: #FFFFFF;
-	font-size: 16px;
-	border-radius: 5px;
-	border: 1px #3866a3 solid;
-	background: linear-gradient(180deg, #1826c4 5%, #5594cf 100%);
-	text-shadow: 1px 1px 1px #528ecc;
-	box-shadow: inset 1px 1px 2px 0px #bbdaf7;
-	cursor: pointer;
-	display: inline-flex;
-	align-items: center;
-}
-.consulta:hover {
-	background: linear-gradient(180deg, #5594cf 5%, #1826c4 100%);
-}
-.consulta-icon {
-	padding: 8px 10px;
-	border-right: 1px solid rgba(255, 255, 255, 0.16);
-	box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
-}
-.consulta-icon svg {
-	vertical-align: middle;
-	position: relative;
-}
-.consulta-text {
-	padding: 8px 13px;
-}
-.Busca {
-    font-family: Arial;
-    color: #FFFFFF;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px #039118 solid;
-    background: linear-gradient(180deg, #00b530 5%, #1564ad 81%);
-    text-shadow: 1px 1px 1px #528ecc;
-    box-shadow: inset 1px 1px 2px 0px #bbdaf7;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-}
-.Busca:hover {
-    background: linear-gradient(180deg, #1564ad 5%, #00b530 81%);
-}
-.Busca-icon {
-    padding: 10px 10px;
-    border-right: 1px solid rgba(255, 255, 255, 0.16);
-    box-shadow: rgba(0, 0, 0, 0.14) -1px 0px 0px inset;
-}
-.Busca-icon svg {
-    vertical-align: middle;
-    position: relative;
-}
-.Busca-text {
-    padding: 10px 18px;
-}
-
-        .auto-style1 {
-            left: -33px;
-            top: 0px;
-        }
 
     </style>
     <center>
-        <h1>Ingreso de Usuarios </h1> 
+        <h1>LAPTOPS </h1> 
+        <h4>Compra de productos</h4>
     </center>
     <br />
     <div class="comp">
@@ -147,6 +87,5 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString13 %>" SelectCommand="SELECT * FROM [producto_laptop]"></asp:SqlDataSource>
         
     </div>
-     </div>
-     </div>
+    
      </asp:Content>
