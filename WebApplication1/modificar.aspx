@@ -15,11 +15,24 @@
             height:25px; 
             width: 275px; 
         } 
+        .auto-style1 {
+            width: 106px;
+            height: 22px;
+        }
+        .auto-style2 {
+            height: 22px;
+        }
     </style>
     <br />
     <div>
 
         <table  style="width: 100%">
+             <tr >
+                <td class="mi" style="width: 106px">ID</td>
+                <td >
+                    <asp:TextBox ID="TextBox6" runat="server" class="ma" Font-Size="Medium" Width="153px"></asp:TextBox>
+                </td>
+            </tr>
             <tr >
                 <td class="mi" style="width: 106px">Nombre</td>
                 <td >
@@ -42,8 +55,8 @@
             </tr>
             <tr>
                
-                <td style="width: 106px">Correo</td>
-                <td>
+                <td class="auto-style1">Correo</td>
+                <td class="auto-style2">
                     <asp:TextBox ID="TextBox4" runat="server" Font-Size="Medium" Width="153px"></asp:TextBox>
                 </td>
             </tr>
@@ -52,6 +65,7 @@
                 <td style="width: 106px">Puesto</td>
                 <td>
                     <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>Gerente</asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>

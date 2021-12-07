@@ -26,7 +26,7 @@ namespace WebApplication1
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
             conexion.Open();
-            SqlCommand comm = new SqlCommand("Insert into empleados values('"+TextBox1.Text+"','"+TextBox2.Text+ "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + DropDownList1.SelectedValue + "','" + TextBox5.Text + "')",conexion);
+            SqlCommand comm = new SqlCommand("Insert into empleados(id_empleado,nombre,diu,nit,correo,puesto,salario) values('" + TextBox6.Text + "','" + TextBox1.Text+"','"+TextBox2.Text+ "','" + TextBox3.Text + "','" + TextBox4.Text + "','" + DropDownList1.SelectedValue + "','" + TextBox5.Text + "')",conexion);
             comm.ExecuteNonQuery();
             conexion.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Empleado Insertado');", true);
@@ -37,7 +37,7 @@ namespace WebApplication1
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
             conexion.Open();
-            SqlCommand comm = new SqlCommand("update empleados set nombre='" + TextBox1.Text + "',dui='" + TextBox2.Text + "',nit='" + TextBox3.Text + "',correo='" + TextBox4.Text + "',Puesto='" + DropDownList1.SelectedValue + "',salario='" + TextBox5.Text + "')", conexion);
+            SqlCommand comm = new SqlCommand("update empleados set nombre='" + TextBox1.Text + "',diu='" + TextBox2.Text + "',nit='" + TextBox3.Text + "',correo='" + TextBox4.Text + "',Puesto='" + DropDownList1.SelectedValue + "',salario='" + TextBox5.Text + "'where id_empleado='"+ TextBox6.Text+"'", conexion);
             comm.ExecuteNonQuery();
             conexion.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Empleado Modificado');", true);
@@ -47,7 +47,8 @@ namespace WebApplication1
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
             conexion.Open();
-            SqlCommand comm = new SqlCommand("delete empleados set nombre='" + TextBox1.Text + "'", conexion);
+            SqlCommand comm = new SqlCommand("delete from empleados where id_empleado='" + TextBox6.Text + "'", conexion);
+            comm.ExecuteNonQuery();
             conexion.Close();
             ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Empleado Eliminado');", true);
         }
@@ -56,15 +57,16 @@ namespace WebApplication1
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
             conexion.Open();
-            SqlCommand comm = new SqlCommand("Select * from empleados where nombre='" + TextBox1.Text + "'", conexion);
+            SqlCommand comm = new SqlCommand("Select * from empleados where id_empleado='" + TextBox6.Text + "'", conexion);
             SqlDataReader r = comm.ExecuteReader();
             while (r.Read())
             {
-                TextBox2.Text = r.GetValue(1).ToString();
-                TextBox3.Text = r.GetValue(2).ToString();
-                TextBox4.Text = r.GetValue(3).ToString();
-                DropDownList1.SelectedValue = r.GetValue(4).ToString();
-                TextBox5.Text = r.GetValue(5).ToString();
+                TextBox1.Text = r.GetValue(1).ToString();
+                TextBox2.Text = r.GetValue(2).ToString();
+                TextBox3.Text = r.GetValue(3).ToString();
+                TextBox4.Text = r.GetValue(4).ToString();
+                DropDownList1.SelectedValue = r.GetValue(5).ToString();
+                TextBox5.Text = r.GetValue(6).ToString();
 
 
             }
