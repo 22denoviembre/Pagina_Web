@@ -11,6 +11,10 @@
 	        width: 275px;
         }
 
+         .auto-style1 {
+             width: 334px;
+         }
+
     </style>
     <center>
         <h1>CELULARES </h1> 
@@ -22,27 +26,33 @@
         <table style="width: 100%">
             <tr>
                 <td style="width: 161px" class="ca">Nombre del Producto:</td>
-                <td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TextBox1" CssClass="ce" runat="server"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
                 <td style="width: 161px" class="ca">Caracteristicas:</td>
-                <td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TextBox2" runat="server" CssClass="ce"></asp:TextBox>
+                </td>
+                <td>
+
+                    <asp:Button ID="Button1" runat="server" Text="Comprar" Width="118px" BackColor="#66FFFF" BorderColor="#44D3F2" BorderStyle="Solid" Font-Bold="True" ForeColor="White" OnClientClick="return confirm('¿Estas Seguro de Comprar Este Producto?')" OnClick="Button1_Click"/>
+
                 </td>
             </tr>
             <tr>
                 <td style="width: 161px" class="ca">Precio:</td>
-                <td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TextBox3" runat="server" CssClass="ce"></asp:TextBox>
                 </td>
+                 
             </tr>
         </table>
         
     </div>
-    <asp:Label ID="Label1" runat="server" Text="Adomicilio"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="¿Desea servicio Adomicilio?" Font-Bold="True"></asp:Label>
     <br />
      <asp:RadioButtonList ID="RadioButtonList1" runat="server">
          <asp:ListItem>Si</asp:ListItem>

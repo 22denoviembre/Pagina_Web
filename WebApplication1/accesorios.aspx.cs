@@ -41,5 +41,15 @@ namespace WebApplication1
         {
             consultaview.Visible = false;
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Comprado');", true);
+
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            Buscar.Text = "";
+        }
     }
 }

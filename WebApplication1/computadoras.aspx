@@ -11,6 +11,10 @@
 	        width: 275px;
         }
 
+        .auto-style1 {
+            width: 381px;
+        }
+
     </style>
 
     <center>
@@ -23,27 +27,33 @@
         <table style="width: 100%">
             <tr>
                 <td style="width: 161px" class="ca">Nombre del Producto:</td>
-                <td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TextBox1" CssClass="ce" runat="server"></asp:TextBox>
                 </td>
             </tr>
 
             <tr>
                 <td style="width: 161px" class="ca">Caracteristicas:</td>
-                <td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TextBox2" runat="server" CssClass="ce"></asp:TextBox>
                 </td>
+                <td>
+
+                    <asp:Button ID="Button1" runat="server" Text="Comprar" Width="118px" BackColor="#66FFFF" BorderColor="#44D3F2" BorderStyle="Solid" Font-Bold="True" ForeColor="White" OnClientClick="return confirm('¿Estas Seguro de Comprar Este Producto?')" OnClick="Button1_Click"/>
+
+                </td>
+                <td></td>
             </tr>
             <tr>
                 <td style="width: 161px" class="ca">Precio:</td>
-                <td>
+                <td class="auto-style1">
                     <asp:TextBox ID="TextBox3" runat="server" CssClass="ce"></asp:TextBox>
                 </td>
             </tr>
         </table>
         
     </div>
-    <asp:Label ID="Label1" runat="server" Text="Adomicilio"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="¿Desea servisio Adomicilio?" Font-Bold="True"></asp:Label>
     <br />
      <asp:RadioButtonList ID="RadioButtonList1" runat="server">
          <asp:ListItem>Si</asp:ListItem>
@@ -51,12 +61,17 @@
     </asp:RadioButtonList>
      <br />
     <div>
+
+    </div>
+    <br />
+    <div>
       <asp:TextBox ID="Buscar" runat="server" CssClass="ce"></asp:TextBox> 
          
         <asp:Button ID="Buscarr" runat="server" Text="Buscar producto" OnClick="Buscarr_Click" BackColor="#990033" BorderColor="#990033" BorderStyle="Solid" Font-Bold="True" ForeColor="White">
 
         </asp:Button>
     </div>
+    
      <br />
     <div>
         <asp:Button id="consulta" runat="server" Text="Mostrar Tabla" OnClick="consulta_Click" BackColor="#006699" BorderColor="#006699" BorderStyle="Solid" Font-Bold="True" ForeColor="White"/>
