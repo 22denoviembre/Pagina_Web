@@ -13,5 +13,25 @@ namespace WebApplication1
         {
 
         }
+
+        protected void laptos_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("laptop.aspx");
+        }
+
+        protected void cel_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("celulares.aspx");
+        }
+
+        protected void accesorios_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("accesorios.aspx");
+        }
+
+        protected void computadoras_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("computadoras.aspx");
+        }
     }
 }
