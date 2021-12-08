@@ -27,7 +27,7 @@
             flex-direction:column;
             background: white;
             width:350px;
-            height:400px;
+            height:425px;
         }
         .heading{
             margin-bottom: 30px;
@@ -94,7 +94,7 @@
          <h1 class="heading">Registro de Usuario</h1>
           <asp:TextBox runat="server" ID="txtcodigo" CssClass="input" placeholder="Ingresa un codigo"></asp:TextBox>
 
-         <asp:TextBox runat="server" ID="txtnombre" CssClass="input" placeholder="Ingresa un codigo"></asp:TextBox>
+         <asp:TextBox runat="server" ID="txtnombre" CssClass="input" placeholder="Ingresa tu nombre"></asp:TextBox>
 
          <asp:TextBox runat="server" ID="txtusuario" CssClass="input" placeholder="Ingresa tu usuario"></asp:TextBox>
          
@@ -102,6 +102,7 @@
          
           <asp:TextBox runat="server" ID="txtclave2" CssClass="input" placeholder="Repita la contraseña"></asp:TextBox>
          <asp:Button runat="server" ID="agregarusuario" CssClass="btn" Text="Crear Usuario" OnClick="agregarusuario_Click" />
+         <p class="text">¿Ya creaste una Cuenta? <a href="loginp.aspx">Iniciar Sesion</a></p>
         
      </div>
         </div>
