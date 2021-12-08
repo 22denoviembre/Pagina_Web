@@ -94,6 +94,8 @@
          <h1 class="heading">Registro de Usuario</h1>
           <asp:TextBox runat="server" ID="txtcodigo" CssClass="input" placeholder="Ingresa un codigo"></asp:TextBox>
 
+         <asp:TextBox runat="server" ID="txtnombre" CssClass="input" placeholder="Ingresa un codigo"></asp:TextBox>
+
          <asp:TextBox runat="server" ID="txtusuario" CssClass="input" placeholder="Ingresa tu usuario"></asp:TextBox>
          
          <asp:TextBox runat="server" ID="txtclave" CssClass="input" placeholder="Crea una contraseña"></asp:TextBox>

@@ -39,10 +39,11 @@ namespace WebApplication1
             else
             {
                 string cadenaconsulta;
-                cadenaconsulta = @"insert into usuario(id_usuario,usuario,password) values(@id_usuario,@usuario,@clave)";
+                cadenaconsulta = @"insert into usuario(id_usuario,nombre,usuario,password) values(@id_usuario,@nombre,@usuario,@clave)";
                 SqlCommand consulta_agregar = new SqlCommand(cadenaconsulta, conexion);
 
                 consulta_agregar.Parameters.AddWithValue("@id_usuario", txtcodigo.Text);
+                consulta_agregar.Parameters.AddWithValue("@nombre", txtnombre.Text);
                 consulta_agregar.Parameters.AddWithValue("@usuario", txtusuario.Text);
                 consulta_agregar.Parameters.AddWithValue("@clave", txtclave.Text);
 
@@ -51,6 +52,7 @@ namespace WebApplication1
                     consulta_agregar.ExecuteNonQuery();
                     conexion.Close();
                     Response.Write("<scrip>alert('Se agregó el nuevo usuario correctamente');</script>"); 
+
                 }
                 catch
                 {
