@@ -125,19 +125,8 @@
  <li><a href="About.aspx">ACERCADE</a></li>
      <li><a href="ayuda.aspx">AYUDA</a></li>
      <li><a href="politicas.aspx">POLITICAS</a></li>
- <li><a href="#">TODOS</a>
- <ul>
- <li><a href="#">Productos</a></li>
- <li><a href="#">Puestos</a></li>
- <li><a href="#">AcercaDe</a></li>
- <li><a href="#">Ayuda</a></li>
- <li><a href="#">MYSQL</a></li>
- </ul>
- </li>
- </ul>
  </div>
 	
-  
         <div class=container >
             <asp:ContentPlaceHolder ID="MainContent" runat="server" >
             </asp:ContentPlaceHolder>
