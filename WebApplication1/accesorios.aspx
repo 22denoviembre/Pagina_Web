@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ingreso.aspx.cs" Inherits="WebApplication1.ingreso" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="accesorios.aspx.cs" Inherits="WebApplication1.accesorios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         .ca{
@@ -13,7 +13,7 @@
 
     </style>
     <center>
-        <h1>LAPTOPS </h1> 
+        <h1>ACCESORIOS </h1> 
         <h4>Compra de productos</h4>
     </center>
     <br />
@@ -52,14 +52,14 @@
     <div>
       <asp:TextBox ID="Buscar" runat="server" CssClass="ce"></asp:TextBox> 
          
-        <asp:Button ID="Buscarr" runat="server" Text="Buscar producto" OnClick="Buscarr_Click">
+        <asp:Button ID="Buscarr" runat="server" Text="Buscar producto" OnClick="Buscarr_Click" BackColor="#990033" BorderColor="#990033" BorderStyle="Solid" Font-Bold="True" ForeColor="White">
 
         </asp:Button>
     </div>
      <br />
     <div>
-        <asp:Button id="consulta" runat="server" Text="Mostrar Tabla" OnClick="consulta_Click"/>
-         <asp:Button id="ocultar" runat="server" Text="Ocultar Tabla" OnClick="ocultar_Click"/>
+        <asp:Button id="consulta" runat="server" Text="Mostrar Tabla" OnClick="consulta_Click" BackColor="#006699" BorderColor="#006699" BorderStyle="Solid" Font-Bold="True" ForeColor="White"/>
+         <asp:Button id="ocultar" runat="server" Text="Ocultar Tabla" OnClick="ocultar_Click" BackColor="#006699" BorderColor="#006CAD" BorderStyle="Solid" Font-Bold="True" ForeColor="White"/>
        
     
         
@@ -87,5 +87,4 @@
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString13 %>" SelectCommand="SELECT * FROM [producto_laptop]"></asp:SqlDataSource>
         
     </div>
-    
-     </asp:Content>
+</asp:Content>

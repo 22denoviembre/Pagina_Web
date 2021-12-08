@@ -114,10 +114,10 @@
  <li><a href="Default.aspx">INICIO</a></li>
  <li><a href="provedor.aspx">PRODUCTOS</a>
      <ul>
- <li><a href="producto.aspx">Computadoras</a></li>
- <li><a href="ingreso.aspx">Laptops</a></li>
- <li><a href="#">Celulares</a></li>
- <li><a href="#">Accesorios</a></li>
+ <li><a href="computadoras.aspx">Computadoras</a></li>
+ <li><a href="laptop.aspx">Laptops</a></li>
+ <li><a href="celulares.aspx">Celulares</a></li>
+ <li><a href="accesorios.aspx">Accesorios</a></li>
  </ul>
  </li>
  <li><a href="puestos.aspx">PUESTOS</a></li>

@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="accesorios.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -167,6 +168,8 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="ayuda.aspx" />
+    <Content Include="celulares.aspx" />
+    <Content Include="computadoras.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -191,7 +194,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="ingreso.aspx" />
+    <Content Include="laptop.aspx" />
     <Content Include="ingresop.aspx" />
     <Content Include="loginp.aspx" />
     <Content Include="modificar_empleado.aspx" />
@@ -236,6 +239,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="accesorios.aspx.cs">
+      <DependentUpon>accesorios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accesorios.aspx.designer.cs">
+      <DependentUpon>accesorios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\AddPhoneNumber.aspx.cs">
       <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -359,6 +369,20 @@
     <Compile Include="ayuda.aspx.designer.cs">
       <DependentUpon>ayuda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="celulares.aspx.cs">
+      <DependentUpon>celulares.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="celulares.aspx.designer.cs">
+      <DependentUpon>celulares.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="computadoras.aspx.cs">
+      <DependentUpon>computadoras.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="computadoras.aspx.designer.cs">
+      <DependentUpon>computadoras.aspx</DependentUpon>
+    </Compile>
     <Compile Include="modificar.aspx.cs">
       <DependentUpon>modificar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -376,12 +400,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ingreso.aspx.cs">
-      <DependentUpon>ingreso.aspx</DependentUpon>
+    <Compile Include="laptop.aspx.cs">
+      <DependentUpon>laptop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ingreso.aspx.designer.cs">
-      <DependentUpon>ingreso.aspx</DependentUpon>
+    <Compile Include="laptop.aspx.designer.cs">
+      <DependentUpon>laptop.aspx</DependentUpon>
     </Compile>
     <Compile Include="ingresop.aspx.cs">
       <DependentUpon>ingresop.aspx</DependentUpon>
