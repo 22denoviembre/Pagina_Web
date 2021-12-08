@@ -9,7 +9,7 @@
     </asp:DropDownList>
     <asp:SqlDataSource ID="prueba" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString5 %>" SelectCommand="SELECT [puestos] FROM [puestos]"></asp:SqlDataSource>
     </p>
-
+    <br />
 <p>
     </p>
 <p>

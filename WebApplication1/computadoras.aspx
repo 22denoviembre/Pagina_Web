@@ -64,6 +64,7 @@
 
     </div>
     <br />
+    
     <div>
       <asp:TextBox ID="Buscar" runat="server" CssClass="ce"></asp:TextBox> 
          

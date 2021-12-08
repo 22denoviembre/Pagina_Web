@@ -200,7 +200,7 @@
     <Content Include="modificar_empleado.aspx" />
     <Content Include="politicas.aspx" />
     <Content Include="Producto.aspx" />
-    <Content Include="provedor.aspx" />
+    <Content Include="productom.aspx" />
     <Content Include="puestos.aspx">
       <BrowseToURL>~/puestos.aspx</BrowseToURL>
     </Content>
@@ -449,12 +449,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="provedor.aspx.cs">
-      <DependentUpon>provedor.aspx</DependentUpon>
+    <Compile Include="productom.aspx.cs">
+      <DependentUpon>productom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="provedor.aspx.designer.cs">
-      <DependentUpon>provedor.aspx</DependentUpon>
+    <Compile Include="productom.aspx.designer.cs">
+      <DependentUpon>productom.aspx</DependentUpon>
     </Compile>
     <Compile Include="puestos.aspx.cs">
       <DependentUpon>puestos.aspx</DependentUpon>
