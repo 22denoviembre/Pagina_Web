@@ -65,7 +65,7 @@
         
         <br />
        <br />
-        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="id_producto" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="consultaview" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" DataKeyNames="id_producto" DataSourceID="SqlDataSource2">
             <Columns>
                 <asp:BoundField DataField="id_producto" HeaderText="id_producto" ReadOnly="True" SortExpression="id_producto" />
                 <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
@@ -83,6 +83,8 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
+        
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString14 %>" SelectCommand="SELECT * FROM [producto_accesorio]"></asp:SqlDataSource>
         
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString13 %>" SelectCommand="SELECT * FROM [producto_laptop]"></asp:SqlDataSource>
         

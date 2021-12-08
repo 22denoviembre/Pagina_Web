@@ -84,7 +84,7 @@
             <SortedDescendingHeaderStyle BackColor="#00547E" />
         </asp:GridView>
         
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString13 %>" SelectCommand="SELECT * FROM [producto_laptop]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString16 %>" SelectCommand="SELECT * FROM [producto_telefono]"></asp:SqlDataSource>
         
     </div>
 </asp:Content>

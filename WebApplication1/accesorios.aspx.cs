@@ -20,7 +20,7 @@ namespace WebApplication1
         {
             SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
             conexion.Open();
-            SqlCommand comm = new SqlCommand("Select * from producto_accesorios where id_producto='" + Buscar.Text + "'", conexion);
+            SqlCommand comm = new SqlCommand("Select * from producto_accesorio where id_producto='" + Buscar.Text + "'", conexion);
             SqlDataReader r = comm.ExecuteReader();
             while (r.Read())
             {
