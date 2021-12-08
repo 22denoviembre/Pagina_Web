@@ -92,6 +92,7 @@
         <div class="main center">
      <div class="box center">
          <h1 class="heading">Registro de Usuario</h1>
+          <asp:TextBox runat="server" ID="txtcodigo" CssClass="input" placeholder="Ingresa un codigo"></asp:TextBox>
 
          <asp:TextBox runat="server" ID="txtusuario" CssClass="input" placeholder="Ingresa tu usuario"></asp:TextBox>
          

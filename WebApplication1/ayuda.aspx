@@ -66,7 +66,7 @@
     <details class="op">
         <summary> ~Opcion Politicas </summary>
         <p>
-          Permite visualizar los productos en stock  <br />
+          Permite ver las politicas de privacidad <br />
         </p>
         </details>
 

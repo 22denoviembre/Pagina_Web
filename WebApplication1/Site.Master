@@ -112,7 +112,7 @@
  <ul>
      
  <li><a href="Default.aspx">INICIO</a></li>
- <li><a href="provedor.aspx">PRODUCTOS</a>
+ <li><a href="productom.aspx">PRODUCTOS</a>
      <ul>
  <li><a href="computadoras.aspx">Computadoras</a></li>
  <li><a href="laptop.aspx">Laptops</a></li>
