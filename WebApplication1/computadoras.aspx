@@ -15,6 +15,10 @@
             width: 381px;
         }
 
+        .auto-style2 {
+            width: 457px;
+        }
+
     </style>
 
     <center>
@@ -37,7 +41,7 @@
                 <td class="auto-style1">
                     <asp:TextBox ID="TextBox2" runat="server" CssClass="ce"></asp:TextBox>
                 </td>
-                <td>
+                <td class="auto-style2">
 
                     <asp:Button ID="Button1" runat="server" Text="Comprar" Width="118px" BackColor="#66FFFF" BorderColor="#44D3F2" BorderStyle="Solid" Font-Bold="True" ForeColor="White" OnClientClick="return confirm('¿Estas Seguro de Comprar Este Producto?')" OnClick="Button1_Click"/>
 

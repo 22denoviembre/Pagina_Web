@@ -2,52 +2,123 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
     <Center> 
-        <h2>PRODUCTOS</h2> 
+        <h2>MANTENIMIENTO&nbsp;</h2> 
+        <h6>Ingresar,Eliminar,Modificar Productos</h6>
     </Center>
     <br>
-        <p> 
-            <asp:Table ID="Table1" runat="server">
-                <asp:TableRow ID="Producto" runat="server">
-                </asp:TableRow>
-                <asp:TableRow ID="Caracteristicas" runat="server">
-                </asp:TableRow>
-            </asp:Table>
-    </p>
-    <p> 
+       <div>
 
-        <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal" Width="519px" AutoGenerateColumns="False" DataKeyNames="id_producto" DataSourceID="SqlDataSource1">
-            <Columns>
-                <asp:BoundField DataField="id_producto" HeaderText="id_producto" ReadOnly="True" SortExpression="id_producto" />
-                <asp:BoundField DataField="producto" HeaderText="producto" SortExpression="producto" />
-                <asp:BoundField DataField="caractetisticas" HeaderText="caractetisticas" SortExpression="caractetisticas" />
-                <asp:BoundField DataField="precios" HeaderText="precios" SortExpression="precios" />
-                <asp:BoundField DataField="proveedor_id" HeaderText="proveedor_id" SortExpression="proveedor_id" />
-            </Columns>
-            <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
-            <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />
-            <SelectedRowStyle BackColor="#CC3333" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F7F7F7" />
-            <SortedAscendingHeaderStyle BackColor="#4B4B4B" />
-            <SortedDescendingCellStyle BackColor="#E5E5E5" />
-            <SortedDescendingHeaderStyle BackColor="#242121" />
-        </asp:GridView>
+           <table style="width: 100%">
+               <tr>
+                   <td style="text-align: center">
+                       <asp:Button ID="Button1" runat="server" Text="Ingresar" />
+                   </td>
+                   <td style="text-align: center">
+                       <asp:Button ID="Button2" runat="server" Text="Eliminar" />
+                   </td>
+                   <td style="text-align: center">
+                       <asp:Button ID="Button3" runat="server" Text="Modificar" />
+                   </td>
+               </tr>
+           </table>
 
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:academicaConnectionString7 %>" SelectCommand="SELECT * FROM [producto]"></asp:SqlDataSource>
-
-    </p>
-    <p>
-
-        &nbsp;</p>
-    <p>
-
-        &nbsp;</p>
-    <p>
-
-        &nbsp;</p>
-    <p>
-
-        &nbsp;</p>
+       </div>
     <br />
+    <div>
+
+        <table style="width: 100%">
+            <tr>
+                <td style="width: 120px">Id_Producto</td>
+                <td style="width: 253px">
+                    <asp:TextBox ID="TextBox1" runat="server" Width="174px"></asp:TextBox>
+                </td>
+                <td style="width: 120px">
+                    <asp:Label ID="Label1" runat="server" Text="Id_Producto"></asp:Label>
+                </td>
+                <td style="width: 248px">
+                    <asp:TextBox ID="TextBox6" runat="server" Width="174px"></asp:TextBox>
+                </td>
+                <td style="width: 121px">
+                    <asp:Label ID="Label6" runat="server" Text="Id_Producto"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox11" runat="server" Width="174px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px">Producto</td>
+                <td style="width: 253px">
+                    <asp:TextBox ID="TextBox2" runat="server" Height="19px" Width="174px"></asp:TextBox>
+                </td>
+                <td style="width: 120px">
+                    <asp:Label ID="Label2" runat="server" Text="Producto"></asp:Label>
+                </td>
+                <td style="width: 248px">
+                    <asp:TextBox ID="TextBox7" runat="server" Width="174px"></asp:TextBox>
+                </td>
+                <td style="width: 121px">
+                    <asp:Label ID="Label7" runat="server" Text="Producto"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox12" runat="server" Width="174px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px">Caracteristicas</td>
+                <td style="width: 253px">
+                    <asp:TextBox ID="TextBox3" runat="server" Height="89px" Width="173px"></asp:TextBox>
+                </td>
+                <td style="width: 120px">
+                    <asp:Label ID="Label3" runat="server" Text="Caracteristicas"></asp:Label>
+                </td>
+                <td style="width: 248px">
+                    <asp:TextBox ID="TextBox16" runat="server" Height="89px" Width="173px"></asp:TextBox>
+                </td>
+                <td style="width: 121px">
+                    <asp:Label ID="Label8" runat="server" Text="Caracteristicas"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox15" runat="server" Height="89px" Width="173px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px">Precio</td>
+                <td style="width: 253px">
+                    <asp:TextBox ID="TextBox4" runat="server" Width="173px"></asp:TextBox>
+                </td>
+                <td style="width: 120px">
+                    <asp:Label ID="Label4" runat="server" Text="Precio"></asp:Label>
+                </td>
+                <td style="width: 248px">
+                    <asp:TextBox ID="TextBox9" runat="server" Width="174px"></asp:TextBox>
+                </td>
+                <td style="width: 121px">
+                    <asp:Label ID="Label9" runat="server" Text="Precio"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox13" runat="server" Width="174px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 120px">Id_Provedor</td>
+                <td style="width: 253px">
+                    <asp:TextBox ID="TextBox5" runat="server" Width="172px"></asp:TextBox>
+                </td>
+                <td style="width: 120px">
+                    <asp:Label ID="Label5" runat="server" Text="Id_Provedor"></asp:Label>
+                </td>
+                <td style="width: 248px">
+                    <asp:TextBox ID="TextBox10" runat="server" Width="174px"></asp:TextBox>
+                </td>
+                <td style="width: 121px">
+                    <asp:Label ID="Label10" runat="server" Text="Id_Provedor"></asp:Label>
+                </td>
+                <td>
+                    <asp:TextBox ID="TextBox14" runat="server" Width="174px"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+
+    </div>
 
 </asp:Content>

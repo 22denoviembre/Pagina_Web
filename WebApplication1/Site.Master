@@ -5,16 +5,22 @@
   *{
  margin:0;
  padding:0;
+  
  }
+  .fondo{
+      background-color:#b9b9b9;
+  }
   
  .menu ul{
      margin: 0 auto;
  float:left;
  width:100%;
- background-color:#143a82 ;
+ background-color:#2860d3;
  height: 40px;
+ 
  }
  .menu ul li{
+     
  display: inline;
  float: left;
  margin-left: 0px;
@@ -22,12 +28,13 @@
  height: 100%;
  }
  .menu ul li a{
+     
  display:block;
  text-decoration:none;
  cursor:pointer;
  line-height: 40px;
  text-align: center;
- color:lightgray;
+ color:#298934;
  font-size: 14px;
  font-family: sans-serif;
  }
@@ -62,11 +69,16 @@
  .menu li:hover a{
  color:white;
  }
+ .OO{
+     display:flex;
+     justify-content:flex-end;
+ }
  .container{
      position:absolute;
      top:50px;
      right:55px;
      left:55px;
+    
  }
  
 </style>
@@ -85,7 +97,7 @@
 
 </head>
     
-<body>
+<body class="fondo">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -125,6 +137,7 @@
  <li><a href="About.aspx">ACERCADE</a></li>
      <li><a href="ayuda.aspx">AYUDA</a></li>
      <li><a href="politicas.aspx">POLITICAS</a></li>
+     <li class="OO"><a href="#">OOO</a></li>
      </ul>
  </div>
 	
