@@ -30,6 +30,7 @@ namespace WebApplication1
             modificar1.Visible = false;
             tabla1.Visible = false;
             ocultar1.Visible = false;
+            consulta1.Visible = false;
 
             //celulares
             idprodu2.Visible = false;
@@ -47,6 +48,7 @@ namespace WebApplication1
             modificar2.Visible = false;
             tabla2.Visible = false;
             ocultar2.Visible = false;
+            consulta2.Visible = false;
 
             //laptops
             idprodu3.Visible = false;
@@ -64,6 +66,7 @@ namespace WebApplication1
             modificar3.Visible = false;
             tabla3.Visible = false;
             ocultar3.Visible = false;
+            consulta3.Visible = false;
 
             //accesorios
             idprodu4.Visible = false;
@@ -81,6 +84,7 @@ namespace WebApplication1
             modificar4.Visible = false;
             tabla4.Visible = false;
             ocultar4.Visible = false;
+            consulta4.Visible = false;
 
         }
 
@@ -106,22 +110,37 @@ namespace WebApplication1
 
         protected void ingresar1_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("Insert into producto_computadoras(id_producto,producto,caracteristicas,precio,provedor_id) values('" + txtprodu1.Text + "','" + txtproducto1.Text + "','" + txtcaracte1.Text + "','" + txtprecio1.Text + "','" + txtprove1.Text + "')", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Insertado');", true);
         }
 
         protected void eliminar1_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("delete from producto_computadoras where id_producto='" + txtprodu1.Text + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Eliminado');", true);
         }
 
         protected void modificar1_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("update producto_computadoras set id_producto='" + txtprodu1.Text + "',producto='" + txtproducto1.Text + "',caracteristicas='" + txtcaracte1.Text + "',precio='" + txtprecio1.Text + "',provedor_id='" + txtprove1 + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Modificado');", true);
         }
 
         protected void tabla1_Click(object sender, EventArgs e)
         {
-
+            consulta1.Visible = true;
         }
 
         protected void ocultar1_Click(object sender, EventArgs e)
@@ -165,22 +184,37 @@ namespace WebApplication1
 
         protected void ingresar2_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("Insert into producto_celulares(id_producto,producto,caracteristicas,precio,provedor_id) values('" + txtprodu2.Text + "','" + txtproducto2.Text + "','" + txtcaracte2.Text + "','" + txtprecio2.Text + "','" + txtprove2.Text + "')", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Insertado');", true);
         }
 
         protected void eliminar2_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("delete from producto_celulares where id_producto='" + txtprodu2.Text + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Eliminado');", true);
         }
 
         protected void modificar2_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("update producto_celulares set id_producto='" + txtprodu2.Text + "',producto='" + txtproducto2.Text + "',caracteristicas='" + txtcaracte2.Text + "',precio='" + txtprecio2.Text + "',provedor_id='" + txtprove2 + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Modificado');", true);
         }
 
         protected void tabla2_Click(object sender, EventArgs e)
         {
-
+            consulta2.Visible = true;
         }
 
         protected void ocultar2_Click(object sender, EventArgs e)
@@ -224,22 +258,37 @@ namespace WebApplication1
 
         protected void ingresar3_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("Insert into producto_laptop(id_producto,producto,caracteristicas,precio,provedor_id) values('" + txtprodu3.Text + "','" + txtproducto3.Text + "','" + txtcaracte3.Text + "','" + txtprecio3.Text + "','" + txtprove3.Text + "')", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Insertado');", true);
         }
 
         protected void eliminar3_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("delete from producto_laptop where id_producto='" + txtprodu3.Text + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Eliminado');", true);
         }
 
         protected void modificar3_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("update producto_laptop set id_producto='" + txtprodu3.Text + "',producto='" + txtproducto3.Text + "',caracteristicas='" + txtcaracte3.Text + "',precio='" + txtprecio3.Text + "',provedor_id='" + txtprove3 + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Modificado');", true);
         }
 
         protected void tabla3_Click(object sender, EventArgs e)
         {
-
+            consulta3.Visible = true;
         }
 
         protected void ocultar3_Click(object sender, EventArgs e)
@@ -283,22 +332,37 @@ namespace WebApplication1
 
         protected void ingresar4_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("Insert into producto_accesorios(id_producto,producto,caracteristicas,precio,provedor_id) values('" + txtprodu4.Text + "','" + txtproducto4.Text + "','" + txtcaracte4.Text + "','" + txtprecio4.Text + "','" + txtprove4.Text + "')", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Insertado');", true);
         }
 
         protected void eliminar4_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("delete from producto_accesorios where id_producto='" + txtprodu4.Text + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Eliminado');", true);
         }
 
         protected void modificar4_Click(object sender, EventArgs e)
         {
-
+            SqlConnection conexion = new SqlConnection(@"Data Source=DESKTOP-KIJ0JR6; Initial Catalog=academica; Integrated Security=True");
+            conexion.Open();
+            SqlCommand comm = new SqlCommand("update producto_caracteristicas set id_producto='" + txtprodu4.Text + "',producto='" + txtproducto4.Text + "',caracteristicas='" + txtcaracte4.Text + "',precio='" + txtprecio4.Text + "',provedor_id='" + txtprove4 + "'", conexion);
+            comm.ExecuteNonQuery();
+            conexion.Close();
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "script", "alert('Producto Modificado');", true);
         }
 
         protected void tabla4_Click(object sender, EventArgs e)
         {
-
+            consulta4.Visible = true;
         }
 
         protected void ocultar4_Click(object sender, EventArgs e)
