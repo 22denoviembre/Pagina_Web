@@ -34,7 +34,7 @@
  cursor:pointer;
  line-height: 40px;
  text-align: center;
- color:#298934;
+ color:#00ff21;
  font-size: 14px;
  font-family: sans-serif;
  }
